@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E31A55218BCAB7C00204C59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E31A55118BCAB7C00204C59 /* Foundation.framework */; };
+		1E31A56018BCAB7C00204C59 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E31A55F18BCAB7C00204C59 /* XCTest.framework */; };
+		1E31A56118BCAB7C00204C59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E31A55118BCAB7C00204C59 /* Foundation.framework */; };
+		1E31A56318BCAB7C00204C59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E31A56218BCAB7C00204C59 /* UIKit.framework */; };
+		1E31A56618BCAB7C00204C59 /* libSMMinizip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E31A54E18BCAB7C00204C59 /* libSMMinizip.a */; };
+		1E31A56C18BCAB7C00204C59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E31A56A18BCAB7C00204C59 /* InfoPlist.strings */; };
+		1E31A56E18BCAB7C00204C59 /* SMMinizipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E31A56D18BCAB7C00204C59 /* SMMinizipTests.m */; };
+		1E31A57818BCAB9700204C59 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E31A57718BCAB9700204C59 /* Security.framework */; };
+		1E31A5A118BCABC900204C59 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E31A57F18BCABC800204C59 /* unzip.c */; };
+		1E31A5A218BCABC900204C59 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E31A58118BCABC800204C59 /* zip.c */; };
+		1E31A5A318BCABC900204C59 /* SMZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E31A58418BCABC800204C59 /* SMZipArchive.m */; };
+		1E31A5A418BCABC900204C59 /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E31A58618BCABC800204C59 /* adler32.c */; };
+		1E31A5A518BCABC900204C59 /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E31A58718BCABC800204C59 /* compress.c */; };
+		1E31A5A618BCABC900204C59 /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E31A58818BCABC800204C59 /* crc32.c */; };
+		1E31A5A718BCABC900204C59 /* deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E31A58A18BCABC800204C59 /* deflate.c */; };
+		1E31A5A818BCABC900204C59 /* gzclose.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E31A58C18BCABC800204C59 /* gzclose.c */; };
+		1E31A5A918BCABC900204C59 /* gzlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E31A58E18BCABC800204C59 /* gzlib.c */; };
+		1E31A5AA18BCABC900204C59 /* gzread.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E31A58F18BCABC800204C59 /* gzread.c */; };
+		1E31A5AB18BCABC900204C59 /* gzwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E31A59018BCABC800204C59 /* gzwrite.c */; };
+		1E31A5AC18BCABC900204C59 /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E31A59118BCABC800204C59 /* infback.c */; };
+		1E31A5AD18BCABC900204C59 /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E31A59218BCABC800204C59 /* inffast.c */; };
+		1E31A5AE18BCABC900204C59 /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E31A59518BCABC800204C59 /* inflate.c */; };
+		1E31A5AF18BCABC900204C59 /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E31A59718BCABC800204C59 /* inftrees.c */; };
+		1E31A5B018BCABC900204C59 /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E31A59918BCABC800204C59 /* trees.c */; };
+		1E31A5B118BCABC900204C59 /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E31A59B18BCABC800204C59 /* uncompr.c */; };
+		1E31A5B218BCABC900204C59 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E31A59E18BCABC900204C59 /* zutil.c */; };
+		267DA4C018BD7F9100B6D0C0 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E31A57D18BCABC800204C59 /* ioapi.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E31A56418BCAB7C00204C59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E31A54618BCAB7C00204C59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E31A54D18BCAB7C00204C59;
+			remoteInfo = SMMinizip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1E31A54C18BCAB7C00204C59 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1E31A54E18BCAB7C00204C59 /* libSMMinizip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSMMinizip.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E31A55118BCAB7C00204C59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1E31A55518BCAB7C00204C59 /* SMMinizip-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SMMinizip-Prefix.pch"; sourceTree = "<group>"; };
+		1E31A55E18BCAB7C00204C59 /* SMMinizipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMMinizipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E31A55F18BCAB7C00204C59 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1E31A56218BCAB7C00204C59 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		1E31A56918BCAB7C00204C59 /* SMMinizipTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SMMinizipTests-Info.plist"; sourceTree = "<group>"; };
+		1E31A56B18BCAB7C00204C59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1E31A56D18BCAB7C00204C59 /* SMMinizipTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMMinizipTests.m; sourceTree = "<group>"; };
+		1E31A57718BCAB9700204C59 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1E31A57918BCAB9E00204C59 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		1E31A57C18BCABC800204C59 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		1E31A57D18BCABC800204C59 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		1E31A57E18BCABC800204C59 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		1E31A57F18BCABC800204C59 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		1E31A58018BCABC800204C59 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		1E31A58118BCABC800204C59 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		1E31A58218BCABC800204C59 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		1E31A58318BCABC800204C59 /* SMZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMZipArchive.h; sourceTree = "<group>"; };
+		1E31A58418BCABC800204C59 /* SMZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMZipArchive.m; sourceTree = "<group>"; };
+		1E31A58618BCABC800204C59 /* adler32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = adler32.c; sourceTree = "<group>"; };
+		1E31A58718BCABC800204C59 /* compress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compress.c; sourceTree = "<group>"; };
+		1E31A58818BCABC800204C59 /* crc32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crc32.c; sourceTree = "<group>"; };
+		1E31A58918BCABC800204C59 /* crc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crc32.h; sourceTree = "<group>"; };
+		1E31A58A18BCABC800204C59 /* deflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = deflate.c; sourceTree = "<group>"; };
+		1E31A58B18BCABC800204C59 /* deflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deflate.h; sourceTree = "<group>"; };
+		1E31A58C18BCABC800204C59 /* gzclose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzclose.c; sourceTree = "<group>"; };
+		1E31A58D18BCABC800204C59 /* gzguts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gzguts.h; sourceTree = "<group>"; };
+		1E31A58E18BCABC800204C59 /* gzlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzlib.c; sourceTree = "<group>"; };
+		1E31A58F18BCABC800204C59 /* gzread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzread.c; sourceTree = "<group>"; };
+		1E31A59018BCABC800204C59 /* gzwrite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzwrite.c; sourceTree = "<group>"; };
+		1E31A59118BCABC800204C59 /* infback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = infback.c; sourceTree = "<group>"; };
+		1E31A59218BCABC800204C59 /* inffast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inffast.c; sourceTree = "<group>"; };
+		1E31A59318BCABC800204C59 /* inffast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffast.h; sourceTree = "<group>"; };
+		1E31A59418BCABC800204C59 /* inffixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffixed.h; sourceTree = "<group>"; };
+		1E31A59518BCABC800204C59 /* inflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inflate.c; sourceTree = "<group>"; };
+		1E31A59618BCABC800204C59 /* inflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inflate.h; sourceTree = "<group>"; };
+		1E31A59718BCABC800204C59 /* inftrees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inftrees.c; sourceTree = "<group>"; };
+		1E31A59818BCABC800204C59 /* inftrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inftrees.h; sourceTree = "<group>"; };
+		1E31A59918BCABC800204C59 /* trees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trees.c; sourceTree = "<group>"; };
+		1E31A59A18BCABC800204C59 /* trees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trees.h; sourceTree = "<group>"; };
+		1E31A59B18BCABC800204C59 /* uncompr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uncompr.c; sourceTree = "<group>"; };
+		1E31A59C18BCABC900204C59 /* zconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zconf.h; sourceTree = "<group>"; };
+		1E31A59D18BCABC900204C59 /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
+		1E31A59E18BCABC900204C59 /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
+		1E31A59F18BCABC900204C59 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E31A54B18BCAB7C00204C59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E31A57818BCAB9700204C59 /* Security.framework in Frameworks */,
+				1E31A55218BCAB7C00204C59 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E31A55B18BCAB7C00204C59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E31A56618BCAB7C00204C59 /* libSMMinizip.a in Frameworks */,
+				1E31A56018BCAB7C00204C59 /* XCTest.framework in Frameworks */,
+				1E31A56318BCAB7C00204C59 /* UIKit.framework in Frameworks */,
+				1E31A56118BCAB7C00204C59 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E31A54518BCAB7C00204C59 = {
+			isa = PBXGroup;
+			children = (
+				1E31A55318BCAB7C00204C59 /* SMMinizip */,
+				1E31A56718BCAB7C00204C59 /* SMMinizipTests */,
+				1E31A55018BCAB7C00204C59 /* Frameworks */,
+				1E31A54F18BCAB7C00204C59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1E31A54F18BCAB7C00204C59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E31A54E18BCAB7C00204C59 /* libSMMinizip.a */,
+				1E31A55E18BCAB7C00204C59 /* SMMinizipTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E31A55018BCAB7C00204C59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E31A57918BCAB9E00204C59 /* libz.1.2.5.dylib */,
+				1E31A57718BCAB9700204C59 /* Security.framework */,
+				1E31A55118BCAB7C00204C59 /* Foundation.framework */,
+				1E31A55F18BCAB7C00204C59 /* XCTest.framework */,
+				1E31A56218BCAB7C00204C59 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1E31A55318BCAB7C00204C59 /* SMMinizip */ = {
+			isa = PBXGroup;
+			children = (
+				1E31A58318BCABC800204C59 /* SMZipArchive.h */,
+				1E31A58418BCABC800204C59 /* SMZipArchive.m */,
+				1E31A57B18BCABC800204C59 /* MiniZip */,
+				1E31A58518BCABC800204C59 /* ZLib */,
+				1E31A55418BCAB7C00204C59 /* Supporting Files */,
+			);
+			path = SMMinizip;
+			sourceTree = "<group>";
+		};
+		1E31A55418BCAB7C00204C59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E31A55518BCAB7C00204C59 /* SMMinizip-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1E31A56718BCAB7C00204C59 /* SMMinizipTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E31A56D18BCAB7C00204C59 /* SMMinizipTests.m */,
+				1E31A56818BCAB7C00204C59 /* Supporting Files */,
+			);
+			path = SMMinizipTests;
+			sourceTree = "<group>";
+		};
+		1E31A56818BCAB7C00204C59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E31A56918BCAB7C00204C59 /* SMMinizipTests-Info.plist */,
+				1E31A56A18BCAB7C00204C59 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1E31A57B18BCABC800204C59 /* MiniZip */ = {
+			isa = PBXGroup;
+			children = (
+				1E31A57C18BCABC800204C59 /* crypt.h */,
+				1E31A57D18BCABC800204C59 /* ioapi.c */,
+				1E31A57E18BCABC800204C59 /* ioapi.h */,
+				1E31A57F18BCABC800204C59 /* unzip.c */,
+				1E31A58018BCABC800204C59 /* unzip.h */,
+				1E31A58118BCABC800204C59 /* zip.c */,
+				1E31A58218BCABC800204C59 /* zip.h */,
+			);
+			path = MiniZip;
+			sourceTree = "<group>";
+		};
+		1E31A58518BCABC800204C59 /* ZLib */ = {
+			isa = PBXGroup;
+			children = (
+				1E31A58618BCABC800204C59 /* adler32.c */,
+				1E31A58718BCABC800204C59 /* compress.c */,
+				1E31A58818BCABC800204C59 /* crc32.c */,
+				1E31A58918BCABC800204C59 /* crc32.h */,
+				1E31A58A18BCABC800204C59 /* deflate.c */,
+				1E31A58B18BCABC800204C59 /* deflate.h */,
+				1E31A58C18BCABC800204C59 /* gzclose.c */,
+				1E31A58D18BCABC800204C59 /* gzguts.h */,
+				1E31A58E18BCABC800204C59 /* gzlib.c */,
+				1E31A58F18BCABC800204C59 /* gzread.c */,
+				1E31A59018BCABC800204C59 /* gzwrite.c */,
+				1E31A59118BCABC800204C59 /* infback.c */,
+				1E31A59218BCABC800204C59 /* inffast.c */,
+				1E31A59318BCABC800204C59 /* inffast.h */,
+				1E31A59418BCABC800204C59 /* inffixed.h */,
+				1E31A59518BCABC800204C59 /* inflate.c */,
+				1E31A59618BCABC800204C59 /* inflate.h */,
+				1E31A59718BCABC800204C59 /* inftrees.c */,
+				1E31A59818BCABC800204C59 /* inftrees.h */,
+				1E31A59918BCABC800204C59 /* trees.c */,
+				1E31A59A18BCABC800204C59 /* trees.h */,
+				1E31A59B18BCABC800204C59 /* uncompr.c */,
+				1E31A59C18BCABC900204C59 /* zconf.h */,
+				1E31A59D18BCABC900204C59 /* zlib.h */,
+				1E31A59E18BCABC900204C59 /* zutil.c */,
+				1E31A59F18BCABC900204C59 /* zutil.h */,
+			);
+			path = ZLib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E31A54D18BCAB7C00204C59 /* SMMinizip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E31A57118BCAB7C00204C59 /* Build configuration list for PBXNativeTarget "SMMinizip" */;
+			buildPhases = (
+				1E31A54A18BCAB7C00204C59 /* Sources */,
+				1E31A54B18BCAB7C00204C59 /* Frameworks */,
+				1E31A54C18BCAB7C00204C59 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMMinizip;
+			productName = SMMinizip;
+			productReference = 1E31A54E18BCAB7C00204C59 /* libSMMinizip.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1E31A55D18BCAB7C00204C59 /* SMMinizipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E31A57418BCAB7C00204C59 /* Build configuration list for PBXNativeTarget "SMMinizipTests" */;
+			buildPhases = (
+				1E31A55A18BCAB7C00204C59 /* Sources */,
+				1E31A55B18BCAB7C00204C59 /* Frameworks */,
+				1E31A55C18BCAB7C00204C59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E31A56518BCAB7C00204C59 /* PBXTargetDependency */,
+			);
+			name = SMMinizipTests;
+			productName = SMMinizipTests;
+			productReference = 1E31A55E18BCAB7C00204C59 /* SMMinizipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E31A54618BCAB7C00204C59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = sharemerge;
+			};
+			buildConfigurationList = 1E31A54918BCAB7C00204C59 /* Build configuration list for PBXProject "SMMinizip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1E31A54518BCAB7C00204C59;
+			productRefGroup = 1E31A54F18BCAB7C00204C59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E31A54D18BCAB7C00204C59 /* SMMinizip */,
+				1E31A55D18BCAB7C00204C59 /* SMMinizipTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E31A55C18BCAB7C00204C59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E31A56C18BCAB7C00204C59 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E31A54A18BCAB7C00204C59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E31A5AC18BCABC900204C59 /* infback.c in Sources */,
+				267DA4C018BD7F9100B6D0C0 /* ioapi.c in Sources */,
+				1E31A5A218BCABC900204C59 /* zip.c in Sources */,
+				1E31A5A518BCABC900204C59 /* compress.c in Sources */,
+				1E31A5A118BCABC900204C59 /* unzip.c in Sources */,
+				1E31A5A818BCABC900204C59 /* gzclose.c in Sources */,
+				1E31A5A318BCABC900204C59 /* SMZipArchive.m in Sources */,
+				1E31A5B118BCABC900204C59 /* uncompr.c in Sources */,
+				1E31A5B218BCABC900204C59 /* zutil.c in Sources */,
+				1E31A5AB18BCABC900204C59 /* gzwrite.c in Sources */,
+				1E31A5A618BCABC900204C59 /* crc32.c in Sources */,
+				1E31A5A418BCABC900204C59 /* adler32.c in Sources */,
+				1E31A5AA18BCABC900204C59 /* gzread.c in Sources */,
+				1E31A5AF18BCABC900204C59 /* inftrees.c in Sources */,
+				1E31A5AD18BCABC900204C59 /* inffast.c in Sources */,
+				1E31A5A918BCABC900204C59 /* gzlib.c in Sources */,
+				1E31A5A718BCABC900204C59 /* deflate.c in Sources */,
+				1E31A5B018BCABC900204C59 /* trees.c in Sources */,
+				1E31A5AE18BCABC900204C59 /* inflate.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E31A55A18BCAB7C00204C59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E31A56E18BCAB7C00204C59 /* SMMinizipTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E31A56518BCAB7C00204C59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E31A54D18BCAB7C00204C59 /* SMMinizip */;
+			targetProxy = 1E31A56418BCAB7C00204C59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1E31A56A18BCAB7C00204C59 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E31A56B18BCAB7C00204C59 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E31A56F18BCAB7C00204C59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1E31A57018BCAB7C00204C59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E31A57218BCAB7C00204C59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SMMinizip.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMMinizip/SMMinizip-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1E31A57318BCAB7C00204C59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SMMinizip.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMMinizip/SMMinizip-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1E31A57518BCAB7C00204C59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMMinizip/SMMinizip-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SMMinizipTests/SMMinizipTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1E31A57618BCAB7C00204C59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMMinizip/SMMinizip-Prefix.pch";
+				INFOPLIST_FILE = "SMMinizipTests/SMMinizipTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E31A54918BCAB7C00204C59 /* Build configuration list for PBXProject "SMMinizip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E31A56F18BCAB7C00204C59 /* Debug */,
+				1E31A57018BCAB7C00204C59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E31A57118BCAB7C00204C59 /* Build configuration list for PBXNativeTarget "SMMinizip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E31A57218BCAB7C00204C59 /* Debug */,
+				1E31A57318BCAB7C00204C59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E31A57418BCAB7C00204C59 /* Build configuration list for PBXNativeTarget "SMMinizipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E31A57518BCAB7C00204C59 /* Debug */,
+				1E31A57618BCAB7C00204C59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E31A54618BCAB7C00204C59 /* Project object */;
+}
