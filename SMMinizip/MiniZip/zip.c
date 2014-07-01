@@ -1333,7 +1333,7 @@ extern int ZEXPORT sm_zipOpenNewFileInZip3_64(zipFile file, const char* filename
     uInt size_extrafield_global, const char* comment, int method, int level, int raw, int windowBits, 
     int memLevel, int strategy, const char* password, uLong crcForCrypting, int zip64)
 {
-    return zipOpenNewFileInZip4_64 (file, filename, zipfi, extrafield_local, size_extrafield_local,
+    return sm_zipOpenNewFileInZip4_64 (file, filename, zipfi, extrafield_local, size_extrafield_local,
         extrafield_global, size_extrafield_global, comment, method, level, raw, windowBits, memLevel, strategy,
         password, crcForCrypting, VERSIONMADEBY, 0, zip64);
 }
